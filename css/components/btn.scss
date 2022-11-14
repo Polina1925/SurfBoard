@@ -1,0 +1,30 @@
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 19px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  color: #000000;
+  background: $yellow;
+  border: none;
+
+  &:hover {
+    background: #FFD517;
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-transform: none;
+
+    &:hover {
+      background: transparent;
+      color: #FFD517;
+    }
+  }
+}
