@@ -4,20 +4,22 @@
   user-select: none;
   color: white;
 
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &:first-child {
-    margin-right: 18px;
+    margin-right: rem(18px);
   }
 
   &--checkbox {
     .radio_visible {
-      border-radius: 4px;
+      border-radius: rem(4px);
 
       &::before {
         background: url("../img/check.png") center center no-repeat;
       }
     }
-
   }
 }
 
@@ -32,17 +34,17 @@
 }
 
 .radio_visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: white;
-  margin-right: 8px;
+  margin-right: rem(8px);
 
   &::before {
     content: url();
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: $yellow;
     border-radius: 50%;
     display: none;

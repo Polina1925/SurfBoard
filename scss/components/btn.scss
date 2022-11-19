@@ -1,9 +1,9 @@
 .btn {
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
-  padding: 19px 35px;
+  padding: rem(19px) rem(35px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   color: #000000;
@@ -11,20 +11,24 @@
   border: none;
 
   &:hover {
-    background: #FFD517;
+    background: #ffd517;
   }
 
   &--theme--transparent {
     background: transparent;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #ffffff;
     text-transform: none;
 
     &:hover {
       background: transparent;
-      color: #FFD517;
+      color: #ffd517;
     }
+  }
+
+  @include tablets {
+    padding: rem(21px) rem(41px);
   }
 }
