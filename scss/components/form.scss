@@ -19,6 +19,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    margin-right: 0;
+  }
+
 }
 
 .form__row {
