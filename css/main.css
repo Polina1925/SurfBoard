@@ -1159,9 +1159,13 @@ button {
   }
 }
 
+.product__text {
+  margin-right: 2.7777777778rem;
+}
 @media screen and (max-width: 768px) {
   .product__text {
     width: 66%;
+    margin-right: 0;
     margin-bottom: 1.2777777778rem;
   }
 }

@@ -119,8 +119,11 @@
 }
 
 .product__text {
+  margin-right: rem(50px);
+
   @include tablets {
     width: 66%;
+    margin-right: 0;
     margin-bottom: rem(23px);
   }
 }
