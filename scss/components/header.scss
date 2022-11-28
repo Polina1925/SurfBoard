@@ -20,6 +20,23 @@
 
   @include tablets {
     display: none;
+    position: fixed;
+    background: #333537;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: rem(36px);
+    line-height: rem(72px);
+  }
+
+  &_active {
+    display: flex;
   }
 }
 
@@ -28,6 +45,13 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .menu__item {
@@ -36,6 +60,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include tablets {
+    margin: 0;
   }
 }
 

@@ -8,11 +8,34 @@
   @include tablets {
     display: inline-flex;
   }
+
+  &__plank {
+    display: block;
+    background: white;
+    width: 100%;
+    height: rem(4px);
+    border-radius: rem(10px);
+  }
+
+  &__close {
+    display: none;
+    justify-content: flex-end;
+    margin: rem(30px);
+
+    @include tablets {
+      display: flex;
+    }
+  }
+
+  &__close-icon {
+    fill: #C2C2C3;
+    display: none;
+    width: rem(20px);
+    height: rem(20px);
+
+    @include tablets {
+      display: inline-flex;
+    }
+  }
 }
 
-.hamburger__plank {
-  display: block;
-  background: white;
-  height: rem(4px);
-  border-radius: rem(10px);
-}
