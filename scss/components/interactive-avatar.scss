@@ -4,7 +4,11 @@
   border: rem(6px) solid transparent;
   border-radius: 50%;
 
-  &--active {
+  &:hover {
     border-color: $yellow;
   }
+}
+
+.interactive-avatar.active {
+  border-color: $yellow;
 }

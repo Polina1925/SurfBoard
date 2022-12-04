@@ -61,6 +61,10 @@
   }
 }
 
+.input__error {
+  border-color: red;
+}
+
 .form__input-textarea {
   @include tablets {
     height: rem(89px);

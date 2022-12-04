@@ -19,6 +19,10 @@
   }
 }
 
+.slider__arrow-right {
+  right: 0;
+}
+
 .slider__arrow-icon {
   width: rem(13.5px);
   height: rem(27px);
@@ -175,6 +179,3 @@
   white-space: nowrap;
 }
 
-.slider__arrow-right {
-  right: 0;
-}
