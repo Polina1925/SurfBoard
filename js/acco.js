@@ -8,8 +8,6 @@ const openItem = item => {
   container.addClass("active");
   button.addClass("team__title-active");
   contentBlock.height(reqHeight);
-
-
 }
 
 const closeEveryItem = container => {
@@ -33,7 +31,4 @@ $('.team__title').click(e => {
     closeEveryItem(container);
     openItem($this);
   }
-
-
-
 });
